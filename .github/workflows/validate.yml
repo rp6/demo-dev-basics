@@ -11,6 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Check files exist
-        run: test -f index.html && test -f styles.css
+        run: test -f index.html && test -f style.css
       - name: Simple HTML sanity check
         run: grep -q "<title>" index.html
